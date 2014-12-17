@@ -30,6 +30,10 @@ gem 'spring',        group: :development
 gem 'bcrypt', '~> 3.1.7'
 gem 'pry-rails'
 gem 'rack-cors', :require => 'rack/cors'
+
+group :production do
+  gem 'rails_12factor'
+end
 # Use unicorn as the app server
 # gem 'unicorn'
 
