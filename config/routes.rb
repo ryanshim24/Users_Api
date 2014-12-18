@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  root 'users#home'
   post '/login', to: 'sessions#create'
   resources :users
   resources :sessions

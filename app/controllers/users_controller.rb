@@ -3,6 +3,9 @@ class UsersController < ApplicationController
 
   respond_to :json
 
+  def home
+  end
+
   def index
     respond_with (@users = User.all)
   end
